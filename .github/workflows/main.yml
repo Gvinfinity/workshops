@@ -32,3 +32,6 @@ jobs:
         env:
           repo: ${{github.event.pull_request.title}}
           assignees: ${{toJson(github.event.pull_request.assignees)}}
+          body: ${{github.event.pull_request.body}}
+          comments_url: ${{github.event.pull_request.comments_url}}
+          review_comments_url: ${{github.event.pull_request.review_comments_url}}
